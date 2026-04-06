@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.1 },
   );
   document.querySelectorAll(".slide-up").forEach((el) => observer.observe(el));
 
@@ -63,16 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const clickableElements = document.querySelectorAll("a, button");
   clickableElements.forEach((el) => {
     el.addEventListener("mouseenter", () =>
-      customCursor.classList.add("pointer")
+      customCursor.classList.add("pointer"),
     );
     el.addEventListener("mouseleave", () =>
-      customCursor.classList.remove("pointer")
+      customCursor.classList.remove("pointer"),
     );
   });
 
   // --- Mobile Menu ---
   mobileMenuBtn.addEventListener("click", () =>
-    mobileMenu.classList.toggle("hidden")
+    mobileMenu.classList.toggle("hidden"),
   );
 
   // --- Tabbed Content & Navigation ---
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function switchTab(tabName) {
     Object.values(contentSections).forEach((section) =>
-      section.classList.remove("active")
+      section.classList.remove("active"),
     );
     if (contentSections[tabName]) {
       contentSections[tabName].classList.add("active");
@@ -119,3 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+function handledownload() {
+  window.open("https://aditya2317.itch.io/cable", "_blank");
+}

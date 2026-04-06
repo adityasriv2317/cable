@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -64,8 +64,11 @@
             >Dev_Docs</a
           >
         </nav>
-        <button class="hidden md:block cyber-btn py-2 px-6">
-          DOWNLOAD_GRID
+        <button
+          onclick="handledownload()"
+          class="hidden md:block cyber-btn py-2 px-6"
+        >
+          DOWNLOAD_NOW
         </button>
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="md:hidden text-white">
@@ -104,8 +107,11 @@
           >Dev_Docs</a
         >
         <div class="p-4">
-          <button class="w-full cyber-btn py-3 px-5 text-lg">
-            DOWNLOAD_GRID
+          <button
+            onclick="handledownload()"
+            class="w-full cyber-btn py-3 px-5 text-lg"
+          >
+            DOWNLOAD_NOW
           </button>
         </div>
       </div>
@@ -144,10 +150,11 @@
             class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
           >
             <button
+              onclick="handledownload()"
               class="cyber-btn py-3 px-8 sm:py-4 sm:px-10 text-lg sm:text-xl hero-btn-anim"
               style="animation-delay: 0.8s"
             >
-              ENTER THE ARENA
+              DOWNLOAD_NOW
             </button>
             <a
               href="#features"
